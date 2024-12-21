@@ -49,13 +49,15 @@ img{
 	border-radius: 20px;
 	padding-top: 0px;
 }
+button:hover{
+	color: var(--hover);
+}
 #fieldset2{
-	border: 2px solid var(--text);
-	border-radius: 20px;
+	display: flex;
 	padding-top: 10px;
 	max-width:600px;
 	float: right;
-	margin-right: 12px;
+	margin-right: 45px;
 }
 :root,
 
@@ -63,7 +65,14 @@ code {
 	font-family: "Hack", "Hack Nerd Font", "JetBrains Mono", "JetBrainsMono Nerd Font", "mononoki", monospace,
 		sans-serif;
 }
-.links {	
+.links {
+	margin-right: 10px;
+	text-align: center;
+	border: 2px solid var(--text);
+	border-radius: 20px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: var(--text);	
 	font-size: 30px;
 }
@@ -114,6 +123,8 @@ a:hover {
 }
 
 a.links:hover {
+	border: 2px solid var(--active);
+	border-radius: 20px;
 	color: var(--active);
 }
 
@@ -132,14 +143,7 @@ progress {
 	accent-color: var(--pink);
 	border-color: var(--text);
 }
-::-moz-progress-bar,
-::-webkit-progress-value {
-	background-color: var(--pink);
-}
-::-webkit-progress-bar {
-	background-color: var(--base);
-	width: 100%;
-}
+
 
 fieldset {
 	margin-bottom: 1em;
@@ -232,7 +236,7 @@ td:nth-child(2) {
 	:root {
 		--target-ratio: 1;
 		--width: min(100% * var(--target-ratio), 1920px * var(--target-ratio));
-		--padding: 4em;
+		--padding: 2em;
 		--padded-width: calc(var(--width) - var(--padding) * 2);
 	}
 
@@ -249,7 +253,8 @@ td:nth-child(2) {
 		margin: auto;
 		padding: var(--padding);
 		width: var(--padded-width);
-		
+		padding-left: 42px;
+		padding-right: 42px;
 	}
     header,
     main,
