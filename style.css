@@ -58,7 +58,6 @@ code {
 .links {	
 	color: var(--text);	
 	font-size: 30px;
-	hover:var(--surface0);
 }
 .links2 {	
     text-decoration-line:underline;
@@ -217,7 +216,9 @@ td:nth-child(2) {
 .webring a {
 	text-decoration: none;
 }
-
+#oneko{
+	padding: 0;	
+}
 @media (min-width: 956px) {
 	:root {
 		--target-ratio: 1;

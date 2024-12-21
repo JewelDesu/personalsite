@@ -95,6 +95,7 @@
       nekoEl.style.left = `${nekoPosX - 16}px`;
       nekoEl.style.top = `${nekoPosY - 16}px`;
       nekoEl.style.zIndex = 2147483647;
+      nekoEl.className = 'dynamic'; 
   
       let nekoFile = ".img/oneko.gif"
       const curScript = document.currentScript
