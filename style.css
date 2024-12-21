@@ -1,0 +1,317 @@
+/* imports */
+@\import "https://fonts.googleapis.com/css?family=Oswald";
+@\import "https://fonts.googleapis.com/css?family=Pacifico";
+/* colors */
+:root {
+	--base: rgba(107, 69, 103, 0.953);
+	--text: #ffe4fd;
+	--surface0: #693d92;
+	--subtext0: #a6adc8;
+	--subtext1: #bac2de;
+	--active: #c78fc0;
+	--hover:var(--text);
+	--visited: 	#81618a;
+}
+
+body {
+	padding-bottom: 64px;
+	background: url(https://i.imgur.com/f8fvBV9.jpg) no-repeat center / cover fixed !important;
+}
+@font-face {
+	font-family: "mononoki";
+	src: url('fonts/mononoki/mononoki-Regular.otf');
+	src: url('fonts/mononoki/mononoki-Regular.otf') format('embedded-opentype'),
+		url('fonts/mononoki/mononoki-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: "mononoki";
+	src: url('fonts/mononoki/mononoki-Bold.otf');
+	src: url('fonts/mononoki/mononoki-Bold.otf') format('embedded-opentype'),
+		url('fonts/mononoki/mononoki-Bold.ttf') format('truetype');
+	font-weight: bold;
+  	font-style: normal;
+}
+img{
+	width: 8rem;
+	height: 8rem;
+	border-radius: 999%;
+	border: 3px solid var(--text);
+	opacity: 1;
+	box-shadow:  0px 0px 0px rgba(0, 0, 0, 0);
+}
+#fieldsmth{
+	float: left;
+	 height: 3px;
+	background-color:var(--text) ;
+}
+#fieldset1{
+	border: 3px solid var(--text);
+	border-radius: 20px;
+	padding-top: 0px;
+}
+:root,
+
+code {
+	font-family: "Hack", "Hack Nerd Font", "JetBrains Mono", "JetBrainsMono Nerd Font", "mononoki", monospace,
+		sans-serif;
+}
+.links {	
+	color: var(--text);	
+	font-size: 30px;
+	hover:var(--surface0);
+}
+.links2 {	
+    text-decoration-line:underline;
+    text-decoration-color: #f5c2e7cc
+}
+:root {
+	scrollbar-width: none;
+
+	background-color: var(--base);
+	color: var(--text);
+	accent-color: var(--pink);
+}
+
+body {
+
+
+	margin: 0;
+	padding: 0;
+
+	background-color: var(--base);
+}
+
+main {
+	padding: 4em 0;
+	border-radius: 20px;
+	background-color: var(--base);
+}
+
+body > main > h1:first-child {
+	margin-top: 10;
+}
+
+a {
+	text-decoration: inherit;
+    cursor: pointer;
+    --tw-text-opacity: 1;
+    color: var(--active);
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(.4, 0, .2, 1)
+}
+
+a:hover {
+	color: var(--hover);
+}
+
+a.links:hover {
+	color: var(--active);
+}
+
+a:active {
+	color: var(--active);
+}
+
+
+progress {
+	width: 100%;
+	border: 2px solid;
+
+	background-color: var(--base);
+	color: var(--pink);
+	accent-color: var(--pink);
+	border-color: var(--text);
+}
+::-moz-progress-bar,
+::-webkit-progress-value {
+	background-color: var(--pink) !important;
+}
+::-webkit-progress-bar {
+	background-color: var(--base);
+	width: 100%;
+}
+
+fieldset {
+	margin-bottom: 1em;
+	border-radius: 20px;
+	border-color: var(--text);
+}
+
+footer {
+	text-align: end;
+	font-size: small;
+	opacity: 50%;
+}
+code {
+	padding: 0.15em 0.3em;
+	overflow-wrap: break-word;
+	word-break: break-all;
+	white-space: pre-wrap;
+
+	background-color: var(--surface0);
+	color: var(--subtext1);
+}
+
+pre > code {
+	border: 2px solid var(--surface0);
+	padding: 1.25em 1.5em;
+	display: block;
+
+	background-color: var(--base);
+	color: var(--text);
+}
+
+legend {
+	font-weight: 900;
+}
+
+.projects-list li details[open] {
+	margin: 1em auto;
+}
+
+summary:hover,
+summary:active,
+details[open] > summary {
+	font-weight: bold;
+}
+
+summary::after {
+	content: " (click to expand)";
+	opacity: 50%;
+	font-size: smaller;
+	font-weight: lighter;
+}
+
+details[open] > summary::after {
+	content: " (click to collapse)";
+}
+
+div.buttons a {
+	font-size: 0;
+}
+div.buttons a > img {
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	object-fit: contain;
+	width: 88px;
+	height: 31px;
+}
+
+table {
+	word-break: break-word;
+}
+
+td:first-child {
+	font-weight: bold;
+	word-break: keep-all;
+	vertical-align: top;
+}
+
+td:nth-child(2) {
+	padding-left: 1em;
+	word-break: break-all;
+}
+
+.webring a {
+	text-decoration: none;
+}
+
+@media (min-width: 956px) {
+	:root {
+		--target-ratio: 1;
+		--width: min(100% * var(--target-ratio), 1920px * var(--target-ratio));
+		--padding: 4em;
+		--padded-width: calc(var(--width) - var(--padding) * 2);
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+		padding: 0;
+		margin: 0;
+	}
+	body > * {
+		margin: auto;
+		padding: var(--padding);
+		width: var(--padded-width);
+		
+	}
+    header,
+    main,
+	footer {
+		margin: 0;
+	}
+	footer {
+		padding: 0;
+		width: var(--width);
+	}
+}
+
+#cover-image-container:before {
+	content: "click\ame";
+	position: fixed;
+	bottom: 13px;
+	left: 0px;
+	
+	margin-left: 1px;
+	
+	color:rgba(254, 241, 248, 1);
+	font: bold 20px/25px Pacifico;
+	text-align: center;
+	letter-spacing: 10px;
+	text-shadow: 1px 1px 25px rgb(167, 20, 110);	
+	text-transform: initial;
+	white-space: pre-line;
+	
+	transform: scale(1) perspective(500px) rotateY(0deg) rotateZ(45deg);
+	animation: pulse 2s infinite;
+}
+
+@keyframes hihi {
+	0% {
+		bottom: 12px;
+		opacity: 0;
+		letter-spacing: 0;
+		
+		animation-timing-function: ease;
+	}
+	90% {
+		bottom: 23px;
+		margin-left: 1px;
+	}
+	100% {
+		letter-spacing: 10px;
+		opacity: 1;
+		
+		animation-timing-function: cubic-bezier(0,0,.75,1);
+	}
+	
+}
+@keyframes pulse {
+    0% { 
+        opacity: 0.4;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.3;
+    }
+}
+.fixed .status-menu:after{top:4px}body{background-image:linear-gradient(to right,rgba(22,22,22,.8),rgba(22,22,22,.9) 20%,rgba(22,22,22,.96),rgba(22,22,22,.9) 80%,rgba(22,22,22,.8)),url(https://i.imgur.com/f8fvBV9.jpg)!important;
+	background-position:center!important;background-attachment:fixed!important}.data.number,
+	.data.priority,
+	.list-item,
+	.list-table[data-items="[]"]:after{background:center/cover no-repeat fixed #212121!important;
+	background-image:linear-gradient(to right,rgba(33,33,33,.75),rgba(33,33,33,.94) 30%,rgba(33,33,33,.895),rgba(33,33,33,.94) 70%,rgba(33,33,33,.75)),
+	url(https://i.imgur.com/f8fvBV9.jpg)!important}
+	.list-item,
+	.list-table[data-items="[]"]:after{box-shadow:0 1px 5px rgba(0,0,0,.42)}.list-item:hover .data.tags a.edit{opacity:.9}.data.licensor a,
+	.data.score a,
+	.data.studio a,
+	.data.tags a:not(.edit){background:rgba(25,25,25,.9)}
