@@ -27,7 +27,7 @@
 	window.addEventListener('load', () => {
 		let [start, speed] = getParams('data-start', 'data-speed');
 
-		let title = document.title + "  ---  ";
+		let title = document.title + "  草莓昔  ";
 		let i = 0;
 
 		setTimeout(function() {

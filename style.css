@@ -3,11 +3,11 @@
 @\import "https://fonts.googleapis.com/css?family=Pacifico";
 /* colors */
 :root {
-	--base: rgba(107, 69, 103, 0.953);
+	--base: #6b4567f3;
 	--text: #ffe4fd;
-	--surface0: #693d92;
+	--surface0: #4d2e49;
 	--subtext0: #a6adc8;
-	--subtext1: #bac2de;
+	--subtext1: #d4a3d1;
 	--active: #c78fc0;
 	--hover:var(--text);
 	--visited: 	#81618a;
@@ -45,9 +45,17 @@ img{
 	background-color:var(--text) ;
 }
 #fieldset1{
-	border: 3px solid var(--text);
+	border: 4px solid var(--text);
 	border-radius: 20px;
 	padding-top: 0px;
+}
+#fieldset2{
+	border: 2px solid var(--text);
+	border-radius: 20px;
+	padding-top: 10px;
+	max-width:600px;
+	float: right;
+	margin-right: 12px;
 }
 :root,
 
@@ -112,8 +120,9 @@ a.links:hover {
 a:active {
 	color: var(--active);
 }
-
-
+section{
+	display:block;
+}
 progress {
 	width: 100%;
 	border: 2px solid;
@@ -125,7 +134,7 @@ progress {
 }
 ::-moz-progress-bar,
 ::-webkit-progress-value {
-	background-color: var(--pink) !important;
+	background-color: var(--pink);
 }
 ::-webkit-progress-bar {
 	background-color: var(--base);
@@ -135,7 +144,7 @@ progress {
 fieldset {
 	margin-bottom: 1em;
 	border-radius: 20px;
-	border-color: var(--text);
+	border: 2px solid var(--text);
 }
 
 footer {
