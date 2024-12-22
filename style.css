@@ -31,7 +31,7 @@ body {
 	font-weight: bold;
   	font-style: normal;
 }
-img{
+#img1{
 	width: 8rem;
 	height: 8rem;
 	border-radius: 999%;
@@ -52,13 +52,20 @@ img{
 button:hover{
 	color: var(--hover);
 }
-#fieldset2{
+#mainbuttons{
 	margin-right: -10px;
 	display: flex;
 	padding-top: 10px;
-	max-width:600px;
 	float: right;
 	margin-bottom: 10px;
+}
+#buttonsnoimg{
+	margin-right: -10px;
+	display: flex;
+	justify-content: right;
+	gap: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
 }
 :root,
 
