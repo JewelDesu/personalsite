@@ -4,14 +4,14 @@
 /* colors */
 :root {
 	--base: #6b4567;
-	--text: #ffe4fd;
+	--text: #ffe4fd;	
 	--surface0: #4d2e49;
 	--subtext0: #a6adc8;
 	--subtext1: #d4a3d1;
 	--active: #c78fc0;
 	--hover:var(--text);
 	--visited: 	#81618a;
-	--currentpage: #d296e4;
+	--currentpage: #bb91cc;
 }
 
 body {
@@ -218,6 +218,21 @@ div.buttons a > img {
 
 table {
 	word-break: break-word;
+	
+}
+.files {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+table.files td:nth-child(1){
+	width: 93%;
+	
+}
+table.files tr:nth-child(1){
+	background-color: var(--surface0);
+	
 }
 
 td:first-child {
@@ -251,7 +266,7 @@ td:nth-child(2) {
 		align-items: center;
 		justify-content: center;
 		min-height: 100vh;
-		padding: 0;
+		padding: 2em;
 		margin: 0;
 	}
 	body > * {
