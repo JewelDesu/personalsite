@@ -16,7 +16,7 @@
 
 body {
 	padding-bottom: 64px;
-	background: url(https://i.imgur.com/f8fvBV9.jpg) no-repeat center / cover fixed !important;
+	background: url("../img/sakusakusakuras.jpeg") no-repeat center / cover fixed !important;
 }
 @font-face {
 	font-family: "mononoki";
@@ -99,6 +99,13 @@ code {
 .links2 {	
     text-decoration-line:underline;
     text-decoration-color: #f5c2e7cc
+}
+.projectbutton {
+	float: right;
+	padding-right: 20px;
+}
+a.projectbutton {
+	text-decoration: underline;
 }
 :root {
 	scrollbar-width: none;
@@ -337,13 +344,14 @@ td:nth-child(2) {
         opacity: 0.3;
     }
 }
-.fixed .status-menu:after{top:4px}body{background-image:linear-gradient(to right,rgba(22,22,22,.8),rgba(22,22,22,.9) 20%,rgba(22,22,22,.96),rgba(22,22,22,.9) 80%,rgba(22,22,22,.8)),url(https://i.imgur.com/f8fvBV9.jpg)!important;
-	background-position:center!important;background-attachment:fixed!important}.data.number,
+.fixed .status-menu:after{top:4px}body{
+	background-image:linear-gradient(to right,rgba(22,22,22,.8),rgba(22,22,22,.9) 20%,rgba(22,22,22,.96),rgba(22,22,22,.9) 80%,rgba(22,22,22,.8)),url("../img/sakusakusakuras.jpeg")!important;
+	background-position:center!important;background-attachment:fixed!important
+}
+	.data.number,
 	.data.priority,
 	.list-item,
-	.list-table[data-items="[]"]:after{background:center/cover no-repeat fixed #212121!important;
-	background-image:linear-gradient(to right,rgba(33,33,33,.75),rgba(33,33,33,.94) 30%,rgba(33,33,33,.895),rgba(33,33,33,.94) 70%,rgba(33,33,33,.75)),
-	url(https://i.imgur.com/f8fvBV9.jpg)!important}
+	.list-table[data-items="[]"]:after{background:center/cover no-repeat fixed #212121!important;background-image:linear-gradient(to right,rgba(33,33,33,.75),rgba(33,33,33,.94) 30%,rgba(33,33,33,.895),rgba(33,33,33,.94) 70%,rgba(33,33,33,.75)),url("../img/sakusakusakuras.jpeg")!important}
 	.list-item,
 	.list-table[data-items="[]"]:after{box-shadow:0 1px 5px rgba(0,0,0,.42)}.list-item:hover .data.tags a.edit{opacity:.9}.data.licensor a,
 	.data.score a,
