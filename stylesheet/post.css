@@ -39,6 +39,13 @@ ul.a {
 	list-style: " ❤ ";
 	margin-bottom: 4px;
 }
+.notetitle {
+	font-size: 2em;
+	color: var(--text);
+}
+.notetitle:hover {
+	color: var(--active);
+}
 code {
 	padding: 0.15em 0.3em;
 	overflow-wrap: break-word;
