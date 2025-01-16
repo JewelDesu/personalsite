@@ -40,8 +40,6 @@ ul.a {
 	margin-bottom: 4px;
 }
 .notetitle {
-	font-weight: bold;
-	font-size: 2em;
 	color: var(--text);
 }
 .notetitle:hover {
