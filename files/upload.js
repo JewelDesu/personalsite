@@ -1,9 +1,9 @@
 function handleSubmit(event) {
-    event.preventDefault();
-    const url = './';
-    const formData = new FormData(form)
-    fetch(url,{
+    
+    const form = event.currentTarget;
+    fetch(form.action,{
         method: 'post',
-        body: formData
+        body: new FormData(form),
     });
+    event.preventDefault();
 }
