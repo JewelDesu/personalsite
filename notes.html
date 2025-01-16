@@ -21,6 +21,7 @@
 		<meta property="og:image:height" content="256">
 		<link rel="shortcut icon" href="/img/heh.jpg" type="image/jpg" />
 		<link rel="stylesheet" href="./stylesheet/style.css" />
+		<link rel="stylesheet" href="./stylesheet/post.css" />
 		<script src="/title-scroll.js" data-start="0" data-speed="10"></script>
 	</head>
 
@@ -37,15 +38,47 @@
 				<div id="buttonsnoimg">
 					<a class="links" href="index.html"> home </a>
 					<a class="links" href="projects.html"> projects </a>
-					<a class="linkscurrent" href="notes.html"> lingus </a>
+					<a class="linkscurrent" href="notes.html"> notes </a>
 					<a class="links" href="files.html"> files </a>
 				</div>
 				<div>
 
 				</div>
-				<p>
-					Silly little projects ive been working on
-				</p>
+				<p>Usefull notes i take while working on my projects. Might also be interesting for you</p>
+				<div style="margin-top: 2em;">
+					<h1><a class="anchor"></a>Pre compiled FFMPEG instalation</h1>
+					<fieldset>
+							<div>
+								<p>For those that are too busy (or too lazy) to compile it themselves because the version that comes from package managers has plugins disabled</p>
+								<div class="post">
+									<div class="table">
+										<div class="tags">refferences</div>
+										<div class="tags value">
+											<a href="https://johnvansickle.com/ffmpeg" title="view all posts with this tag">johnvansickle</a>
+										</div>
+									</div>
+								</div>
+								<hr />
+								<p>In this example i am working with STM32MP157x</p>
+								<h1><a aria-hidden="true" class="anchor"></a>FFMPEG lazy mode</h1>
+								<p>Before instalation check your machenes architecture <code>dpkg --print-architecture</code></p>
+								<pre class="codecontainer"><code class="language-ini"><span class="code">root@stm32mp2:~#</span><span class="command"> dpkg --print-architecture</span>
+<span class="hosttext">arm64</span></code></pre>
+						
+								<p>Now sellect youre spice accordingly to your architecture</p>
+								<pre class="codecontainer"><code class="language-ini"><span class="code">amd64: </span><span class="command">ffmpeg-git-amd64-static.tar.xz</span>
+<span class="code">i686: </span><span class="command">ffmpeg-git-i686-static.tar.xz</span>
+<span class="code">arm64: </span><span class="command">ffmpeg-git-arm64-static.tar.xz</span>
+<span class="code">armhf: </span><span class="command">ffmpeg-git-armhf-static.tar.xz</span>
+<span class="code">armel: </span><span class="command">ffmpeg-git-armel-static.tar.xz
+						</span></code></pre>
+									
+							</div>
+						<div >
+							<a class="projectbutton" href="./pages/notes/note1"> more details</a>
+						</div>
+					</fieldset>
+				</div>
 
 
 

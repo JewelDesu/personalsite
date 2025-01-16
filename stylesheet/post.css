@@ -1,8 +1,10 @@
 :root {
+	--text: #ffe4fd;
 	--command: #f8b7d5;
 	--text1: #cdd6f4;
 	--codebackground: #553752cb;
 	--hosttext:#e9d7f1;
+	--active: #c78fc0;
 }
 .text {
 	color: var(--text1);
@@ -20,6 +22,10 @@
 	text-decoration: none;
 	font-size: x-large;
 	vertical-align: middle;
+	color: var(--active);
+}
+.anchor:hover {
+	color: var(--text);
 }
 .anchor::before {
 	content: "❤";
@@ -27,7 +33,12 @@
 .anchor::after {
 	content: " ";
 }
-
+ul.a {
+	font-size: 2em;
+	font-weight: bold;
+	list-style: " ❤ ";
+	margin-bottom: 4px;
+}
 code {
 	padding: 0.15em 0.3em;
 	overflow-wrap: break-word;
